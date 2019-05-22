@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="3" lineNum="20" pc="268435456" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="3" lineNum="22" pc="268435460" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="3" lineNum="23" pc="268435503" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="3" lineNum="24" pc="268435546" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="4" lineNum="30" pc="268435575" symbol="onShow"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="34" pc="268435580" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="36" pc="268435584" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="37" pc="268435601" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="38" pc="268435611" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="39" pc="268435685" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="42" pc="268435702" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="43" pc="268435730" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="46" pc="268435742" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="47" pc="268435770" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="50" pc="268435826" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="53" pc="268435874" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="54" pc="268435902" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="57" pc="268435994" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="5" lineNum="58" pc="268436008" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="6" lineNum="64" pc="268436023" symbol="onHide"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="7" lineNum="68" pc="268436028" symbol="onExitSleep"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="8" lineNum="72" pc="268436033" symbol="onEnterSleep"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="9" lineNum="76" pc="268436038" symbol="onPartialUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="9" lineNum="78" pc="268436042" symbol="onPartialUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="9" lineNum="79" pc="268436056" symbol="onPartialUpdate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="10" lineNum="83" pc="268436071" symbol="updateSecWidget"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="10" lineNum="85" pc="268436075" symbol="updateSecWidget"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="10" lineNum="86" pc="268436092" symbol="updateSecWidget"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="10" lineNum="87" pc="268436102" symbol="updateSecWidget"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="10" lineNum="89" pc="268436119" symbol="updateSecWidget"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="10" lineNum="90" pc="268436130" symbol="updateSecWidget"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="10" lineNum="91" pc="268436158" symbol="updateSecWidget"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="10" lineNum="93" pc="268436252" symbol="updateSecWidget"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="10" lineNum="94" pc="268436280" symbol="updateSecWidget"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="98" pc="268436381" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="100" pc="268436385" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="101" pc="268436404" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="102" pc="268436414" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="104" pc="268436417" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="106" pc="268436428" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="107" pc="268436438" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="109" pc="268436449" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="110" pc="268436459" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="112" pc="268436470" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="115" pc="268436480" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="118" pc="268436487" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="119" pc="268436515" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="121" pc="268436565" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceView.mc" id="11" lineNum="122" pc="268436587" symbol="updateHeartRate"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceApp.mc" id="13" lineNum="5" pc="268436663" symbol="initialize"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceApp.mc" id="13" lineNum="6" pc="268436667" symbol="initialize"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceApp.mc" id="14" lineNum="10" pc="268436686" symbol="onStart"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceApp.mc" id="15" lineNum="14" pc="268436691" symbol="onStop"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceApp.mc" id="16" lineNum="18" pc="268436696" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\Samuel\\eclipse-workspace\\GOTWatchFace\\source\\GOTWatchFaceApp.mc" id="16" lineNum="19" pc="268436700" symbol="getInitialView"/>
+        <entry filename="Rez" id="23" lineNum="22" pc="268436738" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8390097" method="true" symbol="onPartialUpdate"/>
+        <entry field="true" id="11" symbol="customFont"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="10" object="true" symbol="GOTWatchFaceApp"/>
+        <entry field="true" id="15" symbol="timeColor"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="9" object="true" symbol="GOTWatchFaceView"/>
+        <entry field="true" id="17" symbol="batteryColor"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry id="19" method="true" symbol="updateHeartRate"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="24" symbol="AppName"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="23" symbol="LauncherIcon"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry field="true" id="14" symbol="bgColor"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="22" symbol="got"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="16" symbol="winterColor"/>
+        <entry id="21" module="true" symbol="Layouts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry id="20" module="true" symbol="Menus"/>
+        <entry field="true" id="12" symbol="monImage"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="18" method="true" symbol="updateSecWidget"/>
+        <entry field="true" id="13" symbol="hrIterator"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435575" name="dc" stackId="1" startPc="268435456"/>
+        <entry endPc="268436022" name="stats" stackId="5" startPc="268435584"/>
+        <entry endPc="268436022" name="timeString" stackId="4" startPc="268435584"/>
+        <entry endPc="268436022" name="sec" stackId="3" startPc="268435584"/>
+        <entry endPc="268436022" name="clockTime" stackId="2" startPc="268435584"/>
+        <entry endPc="268436023" name="dc" stackId="1" startPc="268435580"/>
+        <entry endPc="268436071" name="dc" stackId="1" startPc="268436038"/>
+        <entry endPc="268436380" name="sec" stackId="3" startPc="268436075"/>
+        <entry endPc="268436380" name="clockTime" stackId="2" startPc="268436075"/>
+        <entry endPc="268436381" name="dc" stackId="1" startPc="268436071"/>
+        <entry endPc="268436659" name="hr" stackId="3" startPc="268436385"/>
+        <entry endPc="268436659" name="sample" stackId="2" startPc="268436385"/>
+        <entry endPc="268436659" name="heartColor" stackId="4" startPc="268436385"/>
+        <entry endPc="268436660" name="dc" stackId="1" startPc="268436381"/>
+        <entry endPc="268436691" name="state" stackId="1" startPc="268436686"/>
+        <entry endPc="268436696" name="state" stackId="1" startPc="268436691"/>
+        <entry endPc="268436751" name="dc" stackId="1" startPc="268436738"/>
+    </localVars>
+    <annotations/>
+    <functions>
+        <functionEntry accessMode="public" name="onLayout" parent="GOTWatchFaceView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="GOTWatchFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onUpdate" parent="GOTWatchFaceView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="GOTWatchFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="GOTWatchFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="GOTWatchFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onPartialUpdate" parent="GOTWatchFaceView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="updateSecWidget" parent="GOTWatchFaceView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="updateHeartRate" parent="GOTWatchFaceView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="GOTWatchFaceApp">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStart" parent="GOTWatchFaceApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStop" parent="GOTWatchFaceApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getInitialView" parent="GOTWatchFaceApp">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="WatchFace" parent="Layouts">
+            <param id="dc"/>
+            <documentation>
+                <![CDATA[<div class="description"> Draw the layout<br/> param The context<br/></div>]]>
+            </documentation>
+        </functionEntry>
+    </functions>
+    <dataEntryOffsetMappings>
+        <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry offset="166" parentId="globals" symbolId="GOTWatchFaceView" type="class"/>
+        <dataEntry offset="341" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry offset="420" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry offset="467" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry offset="498" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry offset="537" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry offset="568" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry offset="607" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry offset="646" parentId="globals" symbolId="GOTWatchFaceApp" type="class"/>
+    </dataEntryOffsetMappings>
+</debugInfo>
