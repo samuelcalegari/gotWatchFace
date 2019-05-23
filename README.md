@@ -1,4 +1,4 @@
-# gotWatchFace
+# Description
 
 A GOT Styled WatchFace  with Stark Logo for Garmin Watches
 include second counter / battery and heart rate informations
@@ -9,4 +9,8 @@ include second counter / battery and heart rate informations
 - fēnix® 5S fēnix® 5S
 - fēnix® 5X fēnix® 5X, tactix® Charlie
 
+# Copyrights
+
 Logo by @_Mogriave_ (https://www.instagram.com/_mogriave_/)
+
+
