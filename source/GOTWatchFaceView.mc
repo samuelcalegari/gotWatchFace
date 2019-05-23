@@ -8,7 +8,7 @@ using Toybox.Time.Gregorian;
 
 class GOTWatchFaceView extends Ui.WatchFace {
 
-   var customFont = null;
+    var customFont = null;
 	var monImage = null;
 	var hrIterator = null;
 	var bgColor = 0x000000;
@@ -55,7 +55,7 @@ class GOTWatchFaceView extends Ui.WatchFace {
         
     
         updateSecWidget(dc);
-    	updateHeartRate(dc); 	  	    	
+    	updateHeartRate(dc); 		    	
     }
 
     // Called when this View is removed from the screen. Save the
@@ -66,7 +66,7 @@ class GOTWatchFaceView extends Ui.WatchFace {
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() {
-    }
+   	}
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() {
@@ -79,6 +79,9 @@ class GOTWatchFaceView extends Ui.WatchFace {
     	updateHeartRate(dc);
     }
     
+    // Handle a partial update exceeding the power budget
+    function onPowerBudgetExceeded() {
+    }
     
     function updateSecWidget(dc) {
     
@@ -96,30 +99,36 @@ class GOTWatchFaceView extends Ui.WatchFace {
     }
     
     function updateHeartRate(dc) {
+    
+	    var heartRate=0;
+	    var heartColor = null;
+	
+	    if (ActivityMonitor has :getHeartRateHistory) {
+			var hrHist =  ActivityMonitor.getHeartRateHistory(1, true);
+			heartRate = hrHist.next().heartRate;
+		} else {
+			heartRate = 0;
+		}    	
     	
-    	var sample = hrIterator.next();
-    	var hr = sample.heartRate;    	
-    	var heartColor = null;
-    	
-    	if(hr<110) { 
-    		// 0 to 110
+    	if(heartRate<110) { 
+	    	// 0 to 110
 			heartColor = 0xffffff;
-		} else if(hr<150) {
+		} else if(heartRate<150) {
 			// 110 to 150
 		    heartColor = 0x00ff00;
-		} else if(hr<170) {
+		} else if(heartRate<170) {
 			//150 to 170
 		    heartColor = 0xff8c00;
 		} else {
 			// over 170
 			heartColor = 0xff0000;
 		}	 
-    	
-    	dc.setColor(bgColor, bgColor);
-    	dc.fillRectangle(dc.getWidth()/2 - 105, 105, 40, 28);
-    	
-    	dc.setColor(heartColor, bgColor);    	
-        dc.drawText(dc.getWidth()/2 - 85, 105 , Graphics.FONT_XTINY, sample.heartRate, Gfx.TEXT_JUSTIFY_CENTER);
+	    	
+	    dc.setColor(bgColor, bgColor);
+	    dc.fillRectangle(dc.getWidth()/2 - 105, 105, 40, 28);
+	    
+	    dc.setColor(heartColor, bgColor);    	
+	    dc.drawText(dc.getWidth()/2 - 85, 105 , Graphics.FONT_XTINY, heartRate, Gfx.TEXT_JUSTIFY_CENTER);
     }
 
 }
