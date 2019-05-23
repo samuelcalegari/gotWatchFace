@@ -13,6 +13,7 @@ include second counter / battery and heart rate informations
 
 ## Copyrights ##
 
+Developpement by Samuel Calegari (https://www.samuel-calegari.fr)
 Logo by @_Mogriave_ (https://www.instagram.com/_mogriave_/)
 
 ## Licence ##
