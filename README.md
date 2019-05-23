@@ -1,6 +1,12 @@
 # gotWatchFace
-Watch Face for Garmin Watches
 
-Logo by
+A GOT Styled WatchFace  with Stark Logo for Garmin Watches
+include second counter / battery and heart rate informations
 
-https://www.instagram.com/_mogriave_/
+# Compatibles Devices
+
+- fēnix® 5, quatix® 5
+- fēnix® 5S fēnix® 5S
+- fēnix® 5X fēnix® 5X, tactix® Charlie
+
+Logo by @_Mogriave_ (https://www.instagram.com/_mogriave_/)
