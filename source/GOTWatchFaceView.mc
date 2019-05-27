@@ -1,19 +1,19 @@
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
 using Toybox.System as Sys;
+using Toybox.ActivityMonitor as Act;
 using Toybox.Lang;
-using Toybox.Graphics;
 using Toybox.Time;
 using Toybox.Time.Gregorian;
 
 class GOTWatchFaceView extends Ui.WatchFace {
 
-    	var customFont = null;
+    var customFont = null;
 	var monImage = null;
-	var hrIterator = null;
 	var bgColor = 0x000000;
 	var timeColor = 0x3366ff;
 	var winterColor = 0x6699ff;
+	var secColor = 0xffffff;
 	var batteryColor = 0xffffff;
 
     // Load your resources here
@@ -21,7 +21,6 @@ class GOTWatchFaceView extends Ui.WatchFace {
     	
     	customFont = Ui.loadResource(Rez.Fonts.customFont);
         monImage = Ui.loadResource(Rez.Drawables.got); 
-        hrIterator = ActivityMonitor.getHeartRateHistory(null, false);
     }
     
     // Called when this View is brought to the foreground. Restore
@@ -37,6 +36,7 @@ class GOTWatchFaceView extends Ui.WatchFace {
         var sec  = clockTime.sec;      
         var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
         var stats = Sys.getSystemStats();
+        var infos = Act.getInfo();
         
         // Set Background Color        
         dc.setColor(bgColor, bgColor); 
@@ -51,8 +51,23 @@ class GOTWatchFaceView extends Ui.WatchFace {
         
         // Battery info
         dc.setColor(batteryColor, bgColor);
-        dc.drawText(dc.getWidth()/2 + 85, 105 , Graphics.FONT_XTINY, stats.battery.format("%02d")+"%", Gfx.TEXT_JUSTIFY_CENTER);
+        dc.drawText(dc.getWidth()/2 - 85, 105 , Graphics.FONT_XTINY, stats.battery.format("%02d")+"%", Gfx.TEXT_JUSTIFY_CENTER);
+        
+        // Update goals
+        var goal = infos.stepGoal;
+        var steps = infos.steps;
+        var tmp = 360;   
             
+        if(steps < goal) {
+        	tmp = ( steps.toFloat() / goal.toFloat()) * 360;
+        }
+        
+        if(tmp.toNumber() != 0) {
+        	dc.setPenWidth(8);
+        	dc.setColor(winterColor, Gfx.COLOR_TRANSPARENT);        	
+    		dc.drawArc(dc.getWidth()/2, dc.getHeight()/2, dc.getWidth()/2 - 1, Gfx.ARC_COUNTER_CLOCKWISE, 90, tmp.toNumber() + 90);
+    	}
+      
         updateSecWidget(dc);
     	updateHeartRate(dc); 		    	
     }
@@ -65,7 +80,7 @@ class GOTWatchFaceView extends Ui.WatchFace {
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() {
-    }
+   	}
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() {
@@ -86,48 +101,41 @@ class GOTWatchFaceView extends Ui.WatchFace {
     
     	var clockTime = Sys.getClockTime(); 
         var sec  = clockTime.sec;
-        dc.setPenWidth(8);
-        
-        if(sec==0) {        
-        	dc.setColor(bgColor, bgColor);        	
-    		dc.drawArc(dc.getWidth()/2, dc.getHeight()/2, dc.getWidth()/2 - 1, Gfx.ARC_COUNTER_CLOCKWISE, 90, 270 + 90);        
-        } else {    	
-    		dc.setColor(winterColor, bgColor);        	
-    		dc.drawArc(dc.getWidth()/2, dc.getHeight()/2, dc.getWidth()/2 - 1, Gfx.ARC_COUNTER_CLOCKWISE, 90, sec*6 + 90);
-    	}
+    	
+    	dc.setClip(dc.getWidth()/2 + 65, 105, 40, 28);
+    	dc.setColor(secColor, bgColor);    	
+	dc.drawText(dc.getWidth()/2 + 85, 105 , Graphics.FONT_XTINY, sec.format("%02d") , Gfx.TEXT_JUSTIFY_CENTER);
+	dc.clearClip();	
+    	
     }
     
     function updateHeartRate(dc) {
     
-    	var heartRate=0;
-	var heartColor = null;
-	
-	if (ActivityMonitor has :getHeartRateHistory) {
-		var hrHist =  ActivityMonitor.getHeartRateHistory(1, true);
-		heartRate = hrHist.next().heartRate;
-	} else {
-		heartRate = 0;
-	}    	
-    	
-    	if(heartRate<110) { 
+    	var heartColor = null;	    
+	    
+	var hrIter         = Act.getHeartRateHistory(1, true);
+        var hr             = hrIter.next();
+        var bpm            = (hr.heartRate != Act.INVALID_HR_SAMPLE && hr.heartRate > 0) ? hr.heartRate : 0;      
+				               
+	if(bpm<110) { 
 		// 0 to 110
 		heartColor = 0xffffff;
-	} else if(heartRate<150) {
+	} else if(bpm<150) {
 		// 110 to 150
-		heartColor = 0x00ff00;
-	} else if(heartRate<170) {
+	    heartColor = 0x00ff00;
+	} else if(bpm<170) {
 		//150 to 170
-		heartColor = 0xff8c00;
+	    heartColor = 0xff8c00;
 	} else {
 		// over 170
 		heartColor = 0xff0000;
 	}	 
-	   	
-	dc.setColor(bgColor, bgColor);
-	dc.fillRectangle(dc.getWidth()/2 - 105, 105, 40, 28);
-	    
+						
+				        
+	dc.setClip(dc.getWidth()/2 - 20, 105, 40, 28);
 	dc.setColor(heartColor, bgColor);    	
-	dc.drawText(dc.getWidth()/2 - 85, 105 , Graphics.FONT_XTINY, heartRate, Gfx.TEXT_JUSTIFY_CENTER);
+	dc.drawText(dc.getWidth()/2, 105 , Graphics.FONT_XTINY, bpm , Gfx.TEXT_JUSTIFY_CENTER);
+	dc.clearClip();	
     }
 
 }
