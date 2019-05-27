@@ -9,12 +9,12 @@ using Toybox.Time.Gregorian;
 class GOTWatchFaceView extends Ui.WatchFace {
 
     var customFont = null;
-	var monImage = null;
-	var bgColor = 0x000000;
-	var timeColor = 0x3366ff;
-	var winterColor = 0x6699ff;
-	var secColor = 0xffffff;
-	var batteryColor = 0xffffff;
+    var monImage = null;
+    var bgColor = 0x000000;
+    var timeColor = 0x3366ff;
+    var winterColor = 0x6699ff;
+    var secColor = 0xffffff;
+    var batteryColor = 0xffffff;
 
     // Load your resources here
     function onLayout(dc) {
