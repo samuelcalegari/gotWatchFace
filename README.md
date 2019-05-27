@@ -3,7 +3,7 @@
 ## Description ##
 
 A GOT Styled WatchFace with Stark Logo for Garmin Watches
-include second counter / battery and heart rate informations
+include steps goal graphic, second counter, battery  and heart rate informations
 
 ## Compatibles Devices ##
 
