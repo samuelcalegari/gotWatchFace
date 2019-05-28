@@ -5,6 +5,8 @@
 A GOT Styled WatchFace with Stark Logo for Garmin Watches
 include steps goal graphic, second counter, battery  and heart rate informations
 
+![alt text](https://raw.githubusercontent.com/samuelcalegari/gotWatchFace/master/snap.png)
+
 ## Compatibles Devices ##
 
 - Forerunner® 645
