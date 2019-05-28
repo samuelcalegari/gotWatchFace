@@ -8,7 +8,7 @@ using Toybox.Time.Gregorian;
 
 class GOTWatchFaceView extends Ui.WatchFace {
 
-    	var customFont = null;
+    var customFont = null;
 	var monImage = null;
 	var bgColor = 0x000000;
 	var timeColor = 0x3366ff;
@@ -16,48 +16,48 @@ class GOTWatchFaceView extends Ui.WatchFace {
 	var secColor = 0xffffff;
 	var batteryColor = 0xffffff;
 
-    	// Load your resources here
-    	function onLayout(dc) {
+    // Load your resources here
+    function onLayout(dc) {
     	
-    		customFont = Ui.loadResource(Rez.Fonts.customFont);
-        	monImage = Ui.loadResource(Rez.Drawables.got); 
-    	}
+    	customFont = Ui.loadResource(Rez.Fonts.customFont);
+       	monImage = Ui.loadResource(Rez.Drawables.got); 
+    }
     
-    	// Called when this View is brought to the foreground. Restore
-    	// the state of this View and prepare it to be shown. This includes
-    	// loading resources into memory.
-    	function onShow() {
-    	}
+    // Called when this View is brought to the foreground. Restore
+    // the state of this View and prepare it to be shown. This includes
+    // loading resources into memory.
+    function onShow() {
+    }
 
-    	// Update the view
-    	function onUpdate(dc) {
+    // Update the view
+    function onUpdate(dc) {
         
-        	var clockTime = Sys.getClockTime();   
-        	var sec  = clockTime.sec;      
-        	var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
+       	var clockTime = Sys.getClockTime();   
+       	var sec  = clockTime.sec;      
+       	var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
         
-        	// Set Background Color        
-        	dc.setColor(bgColor, bgColor); 
-        	dc.clear();
+       	// Set Background Color        
+       	dc.setColor(bgColor, bgColor); 
+       	dc.clear();
         
-        	// Display Time
-       		dc.setColor(timeColor, bgColor);        
-        	dc.drawText(dc.getWidth()/2, 24 , customFont, timeString, Gfx.TEXT_JUSTIFY_CENTER);
+       	// Display Time
+    	dc.setColor(timeColor, bgColor);        
+       	dc.drawText(dc.getWidth()/2, 24 , customFont, timeString, Gfx.TEXT_JUSTIFY_CENTER);
         
-        	// Set Background image
-        	dc.drawBitmap(dc.getWidth()/2 - 50, 120, monImage);
+       	// Set Background image
+       	dc.drawBitmap(dc.getWidth()/2 - 50, 120, monImage);
         
-        	// Battery info
-        	updateBattery(dc);
+       	// Battery info
+       	updateBattery(dc);
         
-        	// Update steps goal
-        	updateStepsGoal(dc);
+       	// Update steps goal
+       	updateStepsGoal(dc);
       
-      		// Update seconds
-        	updateSec(dc);
+    	// Update seconds
+       	updateSec(dc);
         
-        	// UpdateHeartRate
-    		updateHeartRate(dc); 		
+       	// UpdateHeartRate
+    	updateHeartRate(dc); 		
     	   	
     }
 
@@ -118,36 +118,36 @@ class GOTWatchFaceView extends Ui.WatchFace {
     	
     	dc.setClip(dc.getWidth()/2 + 65, 105, 40, 28);
     	dc.setColor(secColor, bgColor);    	
-	dc.drawText(dc.getWidth()/2 + 85, 105 , Graphics.FONT_XTINY, sec.format("%02d") , Gfx.TEXT_JUSTIFY_CENTER);
-	dc.clearClip();	    	
+		dc.drawText(dc.getWidth()/2 + 85, 105 , Graphics.FONT_XTINY, sec.format("%02d") , Gfx.TEXT_JUSTIFY_CENTER);
+		dc.clearClip();	    	
     }
     
     function updateHeartRate(dc) {
     
     	var heartColor = null;    
-	var hrIter         = Act.getHeartRateHistory(1, true);
+		var hrIter         = Act.getHeartRateHistory(1, true);
         var hr             = hrIter.next();
         var bpm            = (hr.heartRate != Act.INVALID_HR_SAMPLE && hr.heartRate > 0) ? hr.heartRate : 0;      
 				               
-	if(bpm<110) { 
-		// 0 to 110
-		heartColor = 0xffffff;
-	} else if(bpm<150) {
-		// 110 to 150
-		heartColor = 0x00ff00;
-	} else if(bpm<170) {
-		//150 to 170
+		if(bpm<110) { 
+			// 0 to 110
+			heartColor = 0xffffff;
+		} else if(bpm<150) {
+			// 110 to 150
+			heartColor = 0x00ff00;
+		} else if(bpm<170) {
+			//150 to 170
 	    	heartColor = 0xff8c00;
-	} else {
-		// over 170
-		heartColor = 0xff0000;
-	}	 
+		} else {
+			// over 170
+			heartColor = 0xff0000;
+		}	 
 						
 				        
-	dc.setClip(dc.getWidth()/2 - 20, 105, 40, 28);
-	dc.setColor(heartColor, bgColor);    	
-	dc.drawText(dc.getWidth()/2, 105 , Graphics.FONT_XTINY, bpm , Gfx.TEXT_JUSTIFY_CENTER);
-	dc.clearClip();	
+		dc.setClip(dc.getWidth()/2 - 20, 105, 40, 28);
+		dc.setColor(heartColor, bgColor);    	
+		dc.drawText(dc.getWidth()/2, 105 , Graphics.FONT_XTINY, bpm , Gfx.TEXT_JUSTIFY_CENTER);
+		dc.clearClip();	
     }
 
 }
